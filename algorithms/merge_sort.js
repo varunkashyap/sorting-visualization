@@ -24,9 +24,7 @@ function MergeSort(a, options) {
         var i = lo, j = mid + 1;
 
         // copy into auxiliary array
-        for(var k = lo; k <= hi; k++) {
-            aux[k] = a[k];
-        }
+        aux = a.slice(); //shortcut to make copy of an array
 
         for(k = lo; k <= hi; k++) {
             if (i > mid) {
