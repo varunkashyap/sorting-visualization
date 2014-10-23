@@ -29,10 +29,10 @@ function MergeSort(a, options) {
         for(k = lo; k <= hi; k++) {
             if (i > mid) {
                 a[k] = aux[j];
-                j++
+                j++;
             } else if (j > hi) {
                 a[k] = aux[i];
-                i++
+                i++;
             } else if (less(aux[j], aux[i])) {
                 a[k] = aux[j];
                 j++;
